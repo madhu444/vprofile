@@ -9,14 +9,20 @@
     <url>http://maven.apache.org</url>
 	<distributionManagement>
   <repository>
-    <id>releases</id>
+	  <uniqueVersion>false</uniqueVersion> 
+    <id>nexus</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://54.227.19.195:8081/nexus/content/repositories/releases/</url>
+	  <name>Release</name>
+    <url>http://3.80.44.245:8081/nexus/content/repositories/releases/</url>
+	<layout>default</layout>  
   </repository>
   <snapshotRepository>
-    <id>snapshots</id>
+	   <uniqueVersion>false</uniqueVersion> 
+    <id>nexus</id>
+	  <name>Snapshots</name>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://54.227.19.195:8081/nexus/content/repositories/snapshots/</url>
+    <url>http://3.80.44.245:8081/nexus/content/repositories/snapshots/</url>
+	 <layout>legacy</layout> 
   </snapshotRepository>
 </distributionManagement>
 	
